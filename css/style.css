@@ -101,6 +101,7 @@ header {
     border-radius: 2rem;
     padding: 0.5rem 3rem;
     text-decoration: none;
+    display: inline-block;
 }
 
 .card img {
@@ -111,6 +112,7 @@ header {
 h3 {
     color: var(--blue);
     font-size: 1.7rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -142,7 +144,7 @@ p {
     color: var(--white);
     text-align: left;
     font-size: 2.2rem;
-    
+
 }
 
 #planning-card-white {
@@ -171,8 +173,16 @@ p {
 
 /* testimonials */
 
+#top-testimonials{
+    color: var(--black);
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+}
+
 #testimonials h3 {
     color: var(--purple);
+    font-size: 2.5rem;
 }
 
 
@@ -256,7 +266,7 @@ h4 {
     padding: 2rem;
 }
 
-.wrapper-us h2{
+.wrapper-us h2 {
     color: var(--purple);
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -273,22 +283,22 @@ h4 {
     position: relative;
 }
 
-.fa-us{
+.fa-us {
     position: absolute;
-   left: 7rem;
-   top: -1rem;
+    left: 7rem;
+    top: -1rem;
     color: var(--purple);
     z-index: 100;
     font-size: 5rem;
 }
 
-#about-us-btn{
+#about-us-btn {
     background-color: var(--purple);
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0.5rem;
     margin-top: 2rem;
 }
 
-#about-us h3{
+#about-us h3 {
     color: var(--purple);
     margin: 2rem 0;
 }
@@ -296,49 +306,49 @@ h4 {
 /* fine about-us */
 
 /* get-started */
-#get-started{
+#get-started {
     text-align: center;
     color: var(--white);
- }
+}
 
- .get-flex{
+.get-flex {
     flex-direction: column;
     row-gap: 2rem;
     align-items: center;
     padding: 3rem;
- }
+}
 
- #get-started h4{
+#get-started h4 {
     color: var(--yellow);
     font-size: 3rem;
- }
+}
 
- #get-started h3{
+#get-started h3 {
     color: var(--white);
     font-size: 2rem;
- }
+}
 
- #get-started p{
+#get-started p {
     padding: 0;
- }
+}
 
- #btn-start{
+#btn-start {
     background-color: var(--white);
     color: var(--purple);
     padding: 1rem 5rem;
- }
+}
 
- /* ---- */
+/* ---- */
 
 
 
 /* ! Footer */
 footer {
-    
+
     background-color: var(--dark-gray);
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: column;
     padding: 2.5rem 3rem;
@@ -346,7 +356,7 @@ footer {
     color: var(--white);
 }
 
-.footer-container a{
+.footer-container a {
     color: var(--purple);
 }
 
@@ -368,21 +378,21 @@ footer {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         width: calc(33.33% - 1.5rem);
-        
+
     }
 
     #intro .card:first-child {
         width: calc(66.66% - 1.5rem);
         align-items: flex-start;
-        
+
     }
 
-    #intro .card:first-child p{
+    #intro .card:first-child p {
         text-align: left;
     }
 
 
-    #intro .card:nth-child(2){
+    #intro .card:nth-child(2) {
         row-gap: 1rem;
         justify-content: flex-start;
     }
@@ -396,42 +406,138 @@ footer {
 
 
 
-        #testimonial-card{
-            width: 100%;
-            justify-content: space-around; 
-            flex-direction: row ;
-            text-align: left;
-        }
+    #testimonial-card {
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+        text-align: left;
+    }
 
-        #testimonial-card p{
-            flex-basis: 60%;
-        }
+    #testimonial-card p {
+        flex-basis: 60%;
+    }
 
-        .img-container-testimonials{
-            flex-basis: 30% ;
-        }
-     /* ------- */
+    .img-container-testimonials {
+        flex-basis: 30%;
+    }
 
-     /* feaures */
+    /* ------- */
 
-     .flex-features{
+    /* feaures */
+
+    .flex-features {
         display: flex;
         flex-flow: row wrap;
 
-     }
+    }
 
-     #features-card{
-        width: calc((100% - 2rem ) / 2) ;
-        margin: 1rem 0.5rem ;
-     }
+    #features-card {
+        width: calc((100% - 2rem) / 2);
+        margin: 1rem 0.5rem;
+    }
 
-     #features h2{
+    #features h2 {
         margin-bottom: 2rem;
-     }
+    }
+
+    /* ------- */
+
+    /* about us */
+
+    .wrapper-us {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-txt {
+        flex-basis: 50%;
+    }
+
+    .about-us-pic {
+        flex-basis: 30%;
+    }
 
 
-     /* ------- */
+    /* ------- */
 
 }
 
+@media screen and (min-width: 1200px) {
 
+    .container {
+        max-width: 1100px;
+    }
+
+    /* intro sect */
+
+    .card-intro-phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .intro-phone {
+        width: 40%;
+
+    }
+
+    .intro-txt {
+        width: 50%;
+    }
+
+    #phone {
+        width: 80%;
+        align-self: flex-end;
+    }
+
+    /* ------- */
+    /* planning */
+
+    .planning-flex-desk {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #planning-card {
+        width: calc((100% - 2rem)/ 2);
+    }
+
+    #planning-card-white {
+
+        width: calc((100% - 2rem)/ 2);
+    }
+
+
+    /* testimonials */
+    .img-container-testimonials {
+        flex-basis: 20%;
+    }
+
+    .top-testimonials{
+        margin: 0 auto;
+    }
+
+    /* ----- */
+
+
+
+    /* features */
+
+    #features-card {
+        width: calc((100% - 3rem) / 3);
+        margin: 1rem 0.5rem;
+    }
+
+    /* lower sections */
+    .get-flex {
+        max-width: 700px;
+    }
+
+    .footer-container {
+        max-width: 700px;
+    }
+
+    /* ------- */
+
+}
