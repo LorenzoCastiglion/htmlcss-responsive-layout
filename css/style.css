@@ -26,7 +26,7 @@
 body {
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
+   
 }
 
 .container {
@@ -69,9 +69,12 @@ header {
 /* ! Main */
 #planning, #features, #get-started {
     background-color: var(--purple);
+    padding: 2.5rem 3rem;
 }
 
-#intro {
+
+/* intro section */
+#intro,#testimonials, #about-us {
     padding: 2.5rem 3rem;
 }
 
@@ -106,12 +109,55 @@ h3{
 }
 
 p{
-    padding: 0 2rem 1.5rem 2rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+#intro p{
+    text-align: center;
 }
 
 .icone-intro{
     color: var(--blue);
     font-size: 4rem;
+}
+
+/* fine intro */
+
+/* strategic section */
+
+#planning-card{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 0;
+    align-items: flex-start;
+}
+
+#planning h3{
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#plannig-card-white {
+    color: var(--black);
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+}
+#plannig-card-white h3{
+    color: var(--black);
+}
+
+.btn-arrow{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+    background-color: var(--purple);
+    color: var(--black);
+    line-height: 3rem;
 }
 
 
