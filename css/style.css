@@ -139,13 +139,13 @@ p{
     margin-bottom: 1rem;
 }
 
-#plannig-card-white {
+#planning-card-white {
     color: var(--black);
     background-color: var(--white);
     align-items: center;
     text-align: center;
 }
-#plannig-card-white h3{
+#planning-card-white > h3{
     color: var(--black);
 }
 
@@ -160,8 +160,47 @@ p{
     line-height: 3rem;
 }
 
+/* fine planning */
+
+/* testimonials */
+
+#testimonials h3{
+    color: var(--purple);
+}
 
 
+#testimonial-card{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 1.5rem ;
+    text-align: center;
+}
+
+
+#testimonial-card p{
+    padding: 0;
+}
+.img-container-testimonials{
+    width: 10rem;
+    height: 10rem;
+
+   background-size: cover;
+   background-position: center;
+    border-radius: 50%;
+}
+
+.test-one{
+    background-image:url('../img/testimonial1.jpg');
+}
+
+.test-two{
+    background-image:url('../img/testimonial2.jpg');
+}
+
+
+.test-three{
+    background-image:url('../img/testimonial3.jpg');
+}
 /* ! Footer */
 footer {
     background-color: var(--dark-gray);
