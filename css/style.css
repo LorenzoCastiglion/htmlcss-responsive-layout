@@ -72,14 +72,13 @@ header {
 }
 
 #intro {
-    padding: 0 2rem;
+    padding: 2.5rem 3rem;
 }
 
 .card {
     background-color: var(--light-blue);
     margin-bottom: 1.5rem;
     padding: 1.5rem 3rem 0 3rem;
-    margin-top: 1.5rem;
     border-radius: 2rem;
     flex-direction: column;
     align-items: center;
@@ -107,8 +106,15 @@ h3{
 }
 
 p{
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem 1.5rem 2rem;
 }
+
+.icone-intro{
+    color: var(--blue);
+    font-size: 4rem;
+}
+
+
 
 /* ! Footer */
 footer {
