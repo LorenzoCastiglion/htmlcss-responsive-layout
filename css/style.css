@@ -32,6 +32,7 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
+    min-width: 350px;
 }
 
 .d-flex {
@@ -201,6 +202,52 @@ p{
 .test-three{
     background-image:url('../img/testimonial3.jpg');
 }
+
+/* ------ */
+
+/* features */
+#features h2{
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#features-card{
+    margin-top: 3rem;
+    text-align: left;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+    background-color: var(--white);
+}
+
+#features-card h3, h4{
+    color: var(--purple);
+}
+
+#features-card h3{
+    font-size: 4rem;
+}
+
+#features-card h4{
+    font-size: 1.5rem;
+}
+
+#features-card p{
+    padding: 0;
+}
+
+#btn-features{
+    background-color: var(--purple);
+}
+
+/* fine features */
+
+/* about us */
+
+
+
+
+
 /* ! Footer */
 footer {
     background-color: var(--dark-gray);
