@@ -552,7 +552,9 @@ footer {
         display: none;
     }
 
-  
+    #drp-dwn{
+        display: none;
+    }
 
     .main-menu .desktop{
         display: flex;
