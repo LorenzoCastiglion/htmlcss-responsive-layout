@@ -111,11 +111,30 @@ header {
 .main-menu ul {
     display: none;
 }
+    .hamburger:hover + ul{
+    display: flex;
+    min-width: 60vw;
+    position: absolute;
+    list-style: none;
+    line-height: 1.5rem;
+    right: 3.5rem;
+    top: 0.5rem;
+    padding: 1rem;
+    border: 3px solid var(--white);
+    background-color: var(--light-blue);
+    z-index: 100;
+}
+
+.main-menu ul li{
+    padding: 0 1rem;
+}
 
 .main-menu a {
     color: var(--white);
     text-decoration: none;
 }
+
+
 
 /* ! Main */
 #planning,
@@ -573,7 +592,6 @@ footer {
         width: 40%;
     }
 
-   
 
     .intro-txt {
         width: 50%;
