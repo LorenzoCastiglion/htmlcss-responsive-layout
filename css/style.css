@@ -63,6 +63,7 @@ header {
     padding: 1rem 4rem;
     position: fixed;
     width: 100%;
+    z-index: 900;
 }
 
 .main-menu{
@@ -550,6 +551,8 @@ footer {
     .hamburger{
         display: none;
     }
+
+  
 
     .main-menu .desktop{
         display: flex;
