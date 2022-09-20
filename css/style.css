@@ -58,7 +58,7 @@ header {
     padding: 1rem 2rem;
 }
 
-.main-menu {
+.main-menu ul {
     display: none;
 }
 
@@ -106,7 +106,12 @@ header {
 
 .card img {
     width: 20rem;
+    display: block;
 
+}
+
+#intro .card:first-child p {
+    text-align: left;
 }
 
 h3 {
@@ -127,6 +132,10 @@ p {
 .icone-intro {
     color: var(--blue);
     font-size: 4rem;
+}
+
+#phone{
+    max-width: 250px;
 }
 
 /* fine intro */
@@ -199,8 +208,8 @@ p {
 }
 
 .img-container-testimonials {
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
 
     background-size: cover;
     background-position: center;
@@ -295,12 +304,12 @@ h4 {
 #about-us-btn {
     background-color: var(--purple);
     padding: 0.5rem 0.5rem;
-    margin-top: 2rem;
+    
 }
 
 #about-us h3 {
     color: var(--purple);
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 /* fine about-us */
@@ -387,9 +396,7 @@ footer {
 
     }
 
-    #intro .card:first-child p {
-        text-align: left;
-    }
+   
 
 
     #intro .card:nth-child(2) {
@@ -417,7 +424,7 @@ footer {
         flex-basis: 60%;
     }
 
-    .img-container-testimonials {
+    .img-col {
         flex-basis: 30%;
     }
 
@@ -468,6 +475,34 @@ footer {
         max-width: 1100px;
     }
 
+    /* header nav */
+
+    .hamburger{
+        display: none;
+    }
+
+    .main-menu ul{
+        display: flex;
+        
+    }
+
+    /* .flex-nav{
+        display: flex;
+    } */
+
+    .main-menu ul li{
+        list-style: none;
+        margin: 0 1rem;
+    }
+
+    #btn-nav{
+        color: black;
+        background-color: var(--white);
+        border-radius: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+
     /* intro sect */
 
     .card-intro-phone {
@@ -478,17 +513,17 @@ footer {
 
     .intro-phone {
         width: 40%;
+    }
 
+    #phone{
+        width: ;
     }
 
     .intro-txt {
         width: 50%;
     }
 
-    #phone {
-        width: 80%;
-        align-self: flex-end;
-    }
+   
 
     /* ------- */
     /* planning */
@@ -504,13 +539,14 @@ footer {
     }
 
     #planning-card-white {
-
+        
         width: calc((100% - 2rem)/ 2);
     }
 
+    
 
     /* testimonials */
-    .img-container-testimonials {
+    .img-col{
         flex-basis: 20%;
     }
 
