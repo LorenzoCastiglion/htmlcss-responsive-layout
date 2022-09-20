@@ -67,14 +67,14 @@ header {
 }
 
 .main-menu{
-    position: relative;
+    /* position: relative; */
     display: inline-block;
 }
 
 .dropdown-content {
     text-align: center;
     display: none;
-    
+    z-index: 90;
     position: absolute;
     background-color: var(--blue);
     min-width: 160px;
@@ -94,6 +94,13 @@ header {
   .main-menu:hover .dropdown-content {
     display: block;
   }
+
+  .main-menu:hover .overlay{
+    display: block;
+  }
+
+
+
   .dropdown-content a:hover {
     background-color: var(--light-blue);
     color: var(--black);
@@ -101,10 +108,24 @@ header {
     transition: background-color 0.9s;
 }
 
+.overlay{
+    background-color: #0083fd73;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
 
 .hamburger{
     font-size: 2rem;
     margin: 0 0 0 5rem;
+    position: relative;
     
 }
 
@@ -561,6 +582,8 @@ footer {
         
     }
 
+
+    .overlay{visibility: hidden;}
     
 
 
