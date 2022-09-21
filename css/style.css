@@ -101,7 +101,7 @@ header {
 
 
 
-  .dropdown-content a:hover {
+  .dropdown-content li:hover {
     background-color: var(--light-blue);
     color: var(--black);
     transition: color 0.3s;
